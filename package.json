@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vuepress dev docs",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "npm run docs:build && rm -rf *.html && rm -rf assets && mv ./docs/.vuepress/dist/*.html ./ && mv ./docs/.vuepress/dist/assets ./ && git add -A && git commit -m 'deploy' && git push"
   },
   "author": "",
   "license": "ISC",
