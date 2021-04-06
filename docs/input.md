@@ -12,7 +12,7 @@ title: Input
 支持双向数据绑定
 ```vue
     <template>
-        <Input @model="inputValue"/>
+        <Input v-model="inputValue"/>
     </template>
     <script>
         export default {

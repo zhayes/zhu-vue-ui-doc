@@ -12,7 +12,7 @@ title: Checkbox
 支持双向数据绑定
 ```vue
     <template>
-        <Checkbox @model="isChecked"/>
+        <Checkbox v-model="isChecked"/>
     </template>
     <script>
         export default {
